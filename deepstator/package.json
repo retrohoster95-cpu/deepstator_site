@@ -1,0 +1,30 @@
+{
+  "name": "deepstator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DEEPSTATOR — independent editorial publication. Static site generated from Markdown.",
+  "type": "module",
+  "scripts": {
+    "build": "tsx src/build.tsx",
+    "dev": "node scripts/dev.mjs",
+    "preview": "node scripts/serve.mjs",
+    "check": "tsc --noEmit",
+    "new": "node scripts/new-article.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "esbuild": "^0.25.0",
+    "marked": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.4.0",
+    "sharp": "^0.33.5",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "yaml": "^2.6.0"
+  },
+  "engines": { "node": ">=20.11" }
+}
