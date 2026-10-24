@@ -1,0 +1,40 @@
+/* ==========================================================================
+   DEEPSTATOR — design tokens
+   Change the palette, fonts and rhythm of the whole site here.
+   ========================================================================== */
+:root {
+  /* palette */
+  --bg: #080808;
+  --surface-1: #111111;
+  --surface-2: #171717;
+  --text: #f1f0ed;
+  --text-body: #e4e2dd;      /* long-form body copy: a touch softer than headlines */
+  --muted: #888888;
+  --faint: #5c5c5c;
+  --line: #292929;
+  --line-strong: #3a3a3a;
+  --red: #e5242a;
+  --red-deep: #9e1419;
+  --red-wash: rgba(229, 36, 42, 0.14);
+
+  /* type */
+  --f-display: 'Cormorant Garamond', 'Cormorant', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --f-sans: 'Manrope', 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --f-mono: 'IBM Plex Mono', 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  /* layout */
+  --max: 1360px;
+  --gutter: clamp(16px, 4vw, 48px);
+  --header-h: 64px;
+  --measure: 690px;          /* comfortable line length for body text */
+  --section: clamp(72px, 10vw, 152px);
+
+  /* motion */
+  --ease: cubic-bezier(0.2, 0.7, 0.1, 1);
+  --t-fast: 160ms;
+  --t: 320ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --t-fast: 0ms; --t: 0ms; }
+}
